@@ -4,6 +4,7 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
       <router-link to="/vxe-table">VxeTable</router-link>
+      <router-link to="/element">ElementUIDemo</router-link>
     </nav>
     <router-view/>
   </div>
