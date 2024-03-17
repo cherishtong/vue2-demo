@@ -42,11 +42,15 @@
                 </el-date-picker>
             </el-popover>
         </el-tooltip>
+        <OrgPersonSingleSelect />
+        <MyToolTip />
     </div>
 </template>
 <script>
-
+import OrgPersonSingleSelect from "./OrgPersonSingleSelect.vue";
+import MyToolTip from "./MyToolTip.vue";
 export default {
+    components:{OrgPersonSingleSelect,MyToolTip},
     data() {
         return {
             data: [{
