@@ -12,7 +12,7 @@
                             <i class="el-icon-share"
                                 style="font-size: 32px;border-radius: 50%;background: blue;color: aliceblue;margin-right: 8px;"></i>
                             <el-breadcrumb class="nav" separator="/">
-                                <el-breadcrumb-item v-for="(n, index) in navList">
+                                <el-breadcrumb-item v-for="(n, index) in navList" :key="index">
                                     <span :class="getCurNav(index)" @click="clickNav(index)">{{ n.instName }}</span>
                                 </el-breadcrumb-item>
                             </el-breadcrumb>

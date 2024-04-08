@@ -5,6 +5,8 @@
       <router-link to="/about" style="margin-left: 1rem;">About</router-link>
       <router-link to="/vxe-table"  style="margin-left: 1rem;">VxeTable</router-link>
       <router-link to="/element"  style="margin-left: 1rem;">ElementUIDemo</router-link>
+      <router-link to="/editTable"  style="margin-left: 1rem;">编辑表格</router-link>
+      <router-link to="/upload"  style="margin-left: 1rem;">拖拽上传</router-link>
     </nav>
     <router-view/>
   </div>
