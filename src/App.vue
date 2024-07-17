@@ -7,8 +7,10 @@
       <router-link to="/element"  style="margin-left: 1rem;">ElementUIDemo</router-link>
       <router-link to="/editTable"  style="margin-left: 1rem;">编辑表格</router-link>
       <router-link to="/upload"  style="margin-left: 1rem;">拖拽上传</router-link>
+      <router-link to="/x6"  style="margin-left: 1rem;">antV x6</router-link>
     </nav>
-    <router-view/>
+    <div><router-view/></div>
+    
   </div>
 </template>
 
@@ -19,6 +21,10 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 nav {
