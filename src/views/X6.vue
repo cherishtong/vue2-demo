@@ -175,15 +175,31 @@ export default {
     methods: {
         click1() {
             let ele = this.$refs.ripple;
-            // 创建一个mouseover事件
-            var mouseOverEvent = new MouseEvent('mouseover', {
-              
-                bubbles: true,
+          
+            let x = Math.ceil(ele.offsetLeft+ele.offsetWidth/2);
+            let y = Math.ceil(ele.offsetTop+ele.offsetHeight/2);
+            console.log(x,y)
+            // 创建一个鼠标按下事件
+            var mouseDownEvent = new MouseEvent('mousedown', {
+                'bubbles': true,
+                'cancelable': false,
+                'clientX':x,
+                'clientY': y
             });
-            console.log("点击了", ele);
-            ele.ripple()
+            var mouseUpEvent = new MouseEvent('mouseup', {
+                'bubbles': true,
+                'cancelable': true,
+                'clientX':x,
+                'clientY': y
+            });
+
+            ele.dispatchEvent(mouseDownEvent)
+            setTimeout(()=>{
+                console.log(333333333)
+                ele.dispatchEvent(mouseUpEvent)
+            },100)
         },
-        ceshi(){
+        ceshi() {
             console.log(2)
         }
     }
